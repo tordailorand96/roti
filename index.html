@@ -18,7 +18,20 @@
         <script>
             function ribizli (){
                 
-                const response = ["Szia Uram","Hintsek egy lapat szened a szemed koze", "Az én businesemmel ne foglalkozz!!"];
+                const response = ["Hülye kérdés zéró pont",
+                "Asziszed eladom a businessemet", 
+                "Adak én neked zselest",
+                "Nem targyalak veletek ember",
+                "Látod csináltál volna dekorációt, Lenne pénzed",
+                "Jó helyen van az én fejemben",
+                "Nem kell aggódj az én businessem miatt 😛",
+                "Internet kicsiocsem, Szépen ír mindent",
+                "Te délutános vagy?, Az ételt ne rágjam meg helyetted?",
+                "Kézzel ahányat kitépsz annyi 100 lei üti a markod",
+                "Nem mindegy te fiu?",
+                "Gyere fel s számold meg"
+                ];
+
                 const max = response.length;
                 const index = Math.floor(Math.random() * max);
                 const responseText = document.getElementById("kicsi");
@@ -34,14 +47,19 @@
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
                     <h1 class="fst-italic lh-1 mb-4">Hány töve van Rotinak?</h1>
-                    <p class="mb-5" id="kicsi"> Tippeld meg, hány tő ribizlije van Rotinak hány ár területen</p>
+
+                    <div class="roti-image">
+                        <img class="roti-image-image" src="../roti/assets/img/roti.jpeg" alt="roti Image">
+                        <p  class="roti-image-text" class="mb-5" id="kicsi"> Tippeld meg, hány tő ribizlije van Rotinak hány ár területen</p>
+                    </div>
+                    
                     
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control"  type="text" placeholder="Tövek száma"  /></div>
                             <div class="col"><input class="form-control"  type="text" placeholder="Terület(ári)"  /></div>
-                            <div class="col-auto"><button onclick="ribizli()" class="btn btn-primary" id="submitButton" type="button">Tippelek :)</button></div>
+                            <div class="col-auto"><button onclick="ribizli()" class="btn btn-primary" id="submitButton" type="button">Új tipp</button></div>
                         </div>
                        
                         <div class="d-none" id="submitSuccessMessage">

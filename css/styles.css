@@ -78,6 +78,30 @@
 *::after {
   box-sizing: border-box;
 }
+/* roti image ----------- */
+
+.roti-image{
+  background-color: #0d6efd;
+  border-radius: 25%;
+}
+
+.roti-image-image{
+  float: left;
+  height: 80px;
+}
+
+.roti-image-text{
+  height: 80px;
+  margin-left: 10px;
+  padding-left: 10px;
+  color: #000000;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  
+}
+
+/* roti image ----------- */
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -736,6 +760,7 @@ progress {
 
 .col {
   flex: 1 0 0%;
+  display: block; /*Jenoke irta at---------------ss*/ 
 }
 
 .row-cols-auto > * {
